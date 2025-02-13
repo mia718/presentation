@@ -92,6 +92,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+			Reveal.on('slidechanged', (event) => {
+				console.log('Aktiver Slide: ' + event.currentSlide);
+  // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+});
 		</script>
 	</body>
 </html>
